@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cat Images</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor="let cat of cats">
+        <ion-card (click)="openCatDetails(cat)">
+          <img [src]="cat.image" [alt]="cat.breed" />
+          <ion-card-header>
+            <ion-card-title>{{ cat.breed }}</ion-card-title>
+            <ion-card-subtitle>{{ cat.country }}</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ cat.breed }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img [src]="cat.image" [alt]="cat.breed" />
+    <ion-card-header>
+      <ion-card-title>{{ cat.breed }}</ion-card-title>
+      <ion-card-subtitle>{{ cat.country }}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p><strong>Origin:</strong> {{ cat.origin }}</p>
+      <p><strong>Coat:</strong> {{ cat.coat }}</p>
+      <p><strong>Pattern:</strong> {{ cat.pattern }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

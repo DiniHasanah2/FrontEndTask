@@ -1,0 +1,44 @@
+ion-card {
+  --ion-card-background: #f7ebfb; /* Matching the soft pastel purple background */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+
+  img {
+    width: 100%; /* Make the image fill the width of the card */
+    height: 120px; /* Adjust the height for a better fit */
+    object-fit: cover; /* Cover the area, cropping the image as necessary */
+    border-bottom: 2px solid #ca6ad3; /* Add a border at the bottom */
+  }
+
+  ion-card-header {
+    text-align: center; /* Center align text */
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.8); /* Soft background for the text */
+  }
+
+  ion-card-title {
+    font-size: 14px; /* Slightly smaller font for better fit */
+    font-weight: bold;
+    color: #333;
+  }
+
+  ion-card-subtitle {
+    font-size: 12px; /* Slightly smaller font for better fit */
+    color: #555;
+  }
+}
+
+ion-row {
+  justify-content: space-between; /* Distribute the cards within the row */
+}
+
+ion-col {
+  max-width: 220px; /* Set a maximum width for the cards */
+  padding: 8px; /* Add some padding between the cards */
+}

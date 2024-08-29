@@ -1,0 +1,34 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu side="start" menuId="first" contentId="main-content">
+      <ion-content>
+        <ion-list lines="none">
+          <ion-title class="custom-menu-title">Internship Project</ion-title>
+          <ion-item lines="none" class="profile-item">
+            <ion-avatar slot="center" class="profile-avatar">
+              <img src="assets/imgs/profile.jpeg" />
+            </ion-avatar>
+          </ion-item>
+          <ion-label class="profile-label">
+            <h2>Nur Dini Hasanah</h2>
+            <p>Front-End Task</p>
+          </ion-label>
+          <ion-item class="ion-item-custom" [routerLink]="['/home']">
+            <ion-icon name="list-outline" slot="start" class="custom-icon"></ion-icon>
+            <ion-label>Cat Listing</ion-label>
+          </ion-item>
+          <ion-item class="ion-item-custom" [routerLink]="['/cat-images']">
+            <ion-icon name="images-outline" slot="start" class="custom-icon"></ion-icon> <!-- New Icon -->
+            <ion-label>Cat Images</ion-label>
+          </ion-item>
+          <ion-item class="ion-item-custom" [routerLink]="['/logout']">
+            <ion-icon name="log-out-outline" slot="start" class="custom-icon"></ion-icon>
+            <ion-label>Log Out</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar class="custom-toolbar">
+    <ion-title class="page-title">
+      <ion-icon name="paw-outline"></ion-icon> 
+      Cat Listing
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="custom-content">
+  <div class="search-section">
+    <div class="search-container">
+      <ion-searchbar [(ngModel)]="searchTerm" placeholder="Search" (ionInput)="applyFilters()" class="custom-searchbar"></ion-searchbar>
+    </div>
+    <div class="search-by-container">
+      <label class="search-by-label">Search by</label>
+      <ion-select [(ngModel)]="selectedFilter" class="custom-select">
+        <ion-select-option value="breed">Breed</ion-select-option>
+        <ion-select-option value="country">Country</ion-select-option>
+        <ion-select-option value="origin">Origin</ion-select-option>
+        <ion-select-option value="pattern">Pattern</ion-select-option>
+      </ion-select>
+    </div>
+  </div>
+
+  <ion-grid class="custom-grid">
+    <ion-row class="table-header">
+      <ion-col>BIL.</ion-col>
+      <ion-col>BREED</ion-col>
+      <ion-col>COUNTRY</ion-col>
+      <ion-col>ORIGIN</ion-col>
+      <ion-col>COAT</ion-col>
+      <ion-col>PATTERN</ion-col>
+    </ion-row>
+    <ion-row *ngFor="let cat of filteredCats; let i = index">
+      <ion-col>{{ i + 1 }}</ion-col>
+      <ion-col>{{ cat.breed }}</ion-col>
+      <ion-col>{{ cat.country }}</ion-col>
+      <ion-col>{{ cat.origin }}</ion-col>
+      <ion-col>
+        <span [ngClass]="cat.coat | lowercase">{{ cat.coat }}</span>
+      </ion-col>
+      <ion-col>{{ cat.pattern }}</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-footer class="pagination-footer">
+    <div class="pagination-container">
+      <span class="page-info">Page {{ page }} of {{ totalPages }}</span>
+      <ion-button (click)="prevPage()" [disabled]="page === 1" class="pagination-button">&lt;</ion-button>
+      <ion-button (click)="nextPage()" [disabled]="page === totalPages" class="pagination-button">&gt;</ion-button>
+    </div>
+  </ion-footer>
+</ion-content>

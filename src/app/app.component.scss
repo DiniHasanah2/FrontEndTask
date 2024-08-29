@@ -1,0 +1,62 @@
+ion-menu {
+  --background: #e7daf7; /* Soft pastel purple background */
+  width: 250px;
+}
+
+.custom-menu-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: #ca6ad3; 
+  margin: 15px 0;
+}
+
+.profile-item {
+  display: flex;
+  justify-content: center;
+  margin-top: 0; /* Adjust to align properly under "Internship Project" text */
+}
+
+.profile-avatar {
+  border-radius: 50%;
+  border: 3px solid #ca6ad3; /* Add border around the circular profile picture */
+  width: 80px;
+  height: 80px;
+}
+
+.profile-label {
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+
+  h2 {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 4px;
+    color: #555;
+  }
+}
+
+ion-item.ion-item-custom {
+  --background: #f3e7ff; 
+  border-radius: 10px;
+  margin: 10px 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+ion-avatar img {
+  border-radius: 50%; 
+  display: block;
+  margin: auto;
+}
+
+.custom-icon {
+  color: #ca6ad3; /* Set icon color */
+}
