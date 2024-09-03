@@ -1,62 +1,62 @@
 ion-menu {
-  --background: #e7daf7; /* Soft pastel purple background */
-  width: 250px;
+  --background: #e7daf7; /* Set a soft pastel purple background for the menu */
+  width: 250px; /* Set the menu width to 250px */
 }
 
 .custom-menu-title {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  text-align: center;
-  color: #ca6ad3; 
-  margin: 15px 0;
+  font-family: 'Poppins', sans-serif; /* Use the 'Poppins' font for the title */
+  font-weight: 600; /* Make the title text bold */
+  text-align: center; /* Center the title text */
+  color: #ca6ad3; /* Set the title text color to a darker pastel purple */
+  margin: 15px 0; /* Add vertical margin around the title */
 }
 
 .profile-item {
-  display: flex;
-  justify-content: center;
-  margin-top: 0; /* Adjust to align properly under "Internship Project" text */
+  display: flex; /* Use flexbox to center the profile item */
+  justify-content: center; /* Center the profile avatar horizontally */
+  margin-top: 0; /* Ensure the profile item aligns properly under the "Internship Project" title */
 }
 
 .profile-avatar {
-  border-radius: 50%;
-  border: 3px solid #ca6ad3; /* Add border around the circular profile picture */
-  width: 80px;
-  height: 80px;
+  border-radius: 50%; /* Make the profile avatar circular */
+  border: 3px solid #ca6ad3; /* Add a 3px solid border around the avatar with a pastel purple color */
+  width: 80px; /* Set the width of the avatar */
+  height: 80px; /* Set the height of the avatar */
 }
 
 .profile-label {
-  text-align: center;
-  margin-top: 10px;
-  font-family: 'Poppins', sans-serif;
+  text-align: center; /* Center the text under the profile avatar */
+  margin-top: 10px; /* Add some space between the avatar and the label */
+  font-family: 'Poppins', sans-serif; /* Use the 'Poppins' font for the label */
 
   h2 {
-    font-weight: 600;
-    font-size: 16px;
-    margin: 0;
+    font-weight: 600; /* Make the name text bold */
+    font-size: 16px; /* Set the font size for the name */
+    margin: 0; /* Remove default margin */
   }
 
   p {
-    font-weight: 300;
-    font-size: 14px;
-    margin-top: 4px;
-    color: #555;
+    font-weight: 300; /* Use a lighter font weight for the description */
+    font-size: 14px; /* Set the font size for the description */
+    margin-top: 4px; /* Add a small margin above the description */
+    color: #555; /* Set the description text color to a soft gray */
   }
 }
 
 ion-item.ion-item-custom {
-  --background: #f3e7ff; 
-  border-radius: 10px;
-  margin: 10px 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  font-size: 16px;
+  --background: #f3e7ff; /* Set a light pastel background for the menu items */
+  border-radius: 10px; /* Round the corners of the menu items */
+  margin: 10px 15px; /* Add margin around the menu items */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the menu items */
+  font-size: 16px; /* Set the font size for the menu items */
 }
 
 ion-avatar img {
-  border-radius: 50%; 
-  display: block;
-  margin: auto;
+  border-radius: 50%; /* Ensure the profile image within the avatar is circular */
+  display: block; /* Display the image as a block element */
+  margin: auto; /* Center the image within the avatar */
 }
 
 .custom-icon {
-  color: #ca6ad3; /* Set icon color */
+  color: #ca6ad3; /* Set the icon color to match the pastel purple theme */
 }

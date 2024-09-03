@@ -1,44 +1,44 @@
 ion-card {
-  --ion-card-background: #f7ebfb; /* Matching the soft pastel purple background */
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  --ion-card-background: #f7ebfb; /* Set the card background to a soft pastel purple */
+  border-radius: 12px; /* Round the corners of the card */
+  overflow: hidden; /* Hide any overflow content (like images) that might extend beyond the card's borders */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for a slight elevation effect */
+  transition: transform 0.3s ease; /* Smooth transition for the hover effect */
 
   &:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
+    transform: translateY(-5px); /* Slightly lift the card when hovered */
   }
 
   img {
-    width: 100%; /* Make the image fill the width of the card */
-    height: 120px; /* Adjust the height for a better fit */
-    object-fit: cover; /* Cover the area, cropping the image as necessary */
-    border-bottom: 2px solid #ca6ad3; /* Add a border at the bottom */
+    width: 100%; /* Make the image fill the entire width of the card */
+    height: 120px; /* Set a fixed height for the image */
+    object-fit: cover; /* Ensure the image covers the entire area, cropping as necessary */
+    border-bottom: 2px solid #ca6ad3; /* Add a pastel purple border below the image */
   }
 
   ion-card-header {
-    text-align: center; /* Center align text */
-    padding: 8px;
-    background-color: rgba(255, 255, 255, 0.8); /* Soft background for the text */
+    text-align: center; /* Center-align the text within the card header */
+    padding: 8px; /* Add padding inside the card header */
+    background-color: rgba(255, 255, 255, 0.8); /* Set a translucent white background for the header */
   }
 
   ion-card-title {
-    font-size: 14px; /* Slightly smaller font for better fit */
-    font-weight: bold;
-    color: #333;
+    font-size: 14px; /* Set a slightly smaller font size for the title */
+    font-weight: bold; /* Make the title text bold */
+    color: #333; /* Set the title text color to a dark gray */
   }
 
   ion-card-subtitle {
-    font-size: 12px; /* Slightly smaller font for better fit */
-    color: #555;
+    font-size: 12px; /* Set a slightly smaller font size for the subtitle */
+    color: #555; /* Set the subtitle text color to a medium gray */
   }
 }
 
 ion-row {
-  justify-content: space-between; /* Distribute the cards within the row */
+  justify-content: space-between; /* Distribute the cards evenly within the row, with space between them */
 }
 
 ion-col {
-  max-width: 220px; /* Set a maximum width for the cards */
-  padding: 8px; /* Add some padding between the cards */
+  max-width: 220px; /* Set a maximum width for each column, ensuring the cards don't get too wide */
+  padding: 8px; /* Add padding between the columns for spacing */
 }

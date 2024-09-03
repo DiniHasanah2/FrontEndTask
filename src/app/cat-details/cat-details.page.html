@@ -1,20 +1,20 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>{{ cat.breed }}</ion-title>
+  <ion-toolbar> <!-- Toolbar section at the top of the page -->
+    <ion-title>{{ cat.breed }}</ion-title> <!-- Display the cat's breed as the title in the toolbar -->
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-card>
-    <img [src]="cat.image" [alt]="cat.breed" />
-    <ion-card-header>
-      <ion-card-title>{{ cat.breed }}</ion-card-title>
-      <ion-card-subtitle>{{ cat.country }}</ion-card-subtitle>
+  <ion-card> <!-- Card component to display cat details -->
+    <img [src]="cat.image" [alt]="cat.breed" /> <!-- Display the cat's image; the src and alt attributes are dynamically bound to the cat's data -->
+    <ion-card-header> <!-- Header section of the card -->
+      <ion-card-title>{{ cat.breed }}</ion-card-title> <!-- Display the breed of the cat as the card title -->
+      <ion-card-subtitle>{{ cat.country }}</ion-card-subtitle> <!-- Display the country of the cat as the card subtitle -->
     </ion-card-header>
-    <ion-card-content>
-      <p><strong>Origin:</strong> {{ cat.origin }}</p>
-      <p><strong>Coat:</strong> {{ cat.coat }}</p>
-      <p><strong>Pattern:</strong> {{ cat.pattern }}</p>
+    <ion-card-content> <!-- Content section of the card -->
+      <p><strong>Origin:</strong> {{ cat.origin }}</p> <!-- Display the origin of the cat with a bold label -->
+      <p><strong>Coat:</strong> {{ cat.coat }}</p> <!-- Display the coat type of the cat with a bold label -->
+      <p><strong>Pattern:</strong> {{ cat.pattern }}</p> <!-- Display the pattern of the cat with a bold label -->
     </ion-card-content>
   </ion-card>
 </ion-content>

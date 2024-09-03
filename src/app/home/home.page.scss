@@ -1,169 +1,169 @@
 .custom-toolbar {
-  --background: #ffffff;
-  --border-color: #dddddd;
-  box-shadow: none;
+  --background: #ffffff; /* Set the toolbar background to white */
+  --border-color: #dddddd; /* Set the border color to a light gray */
+  box-shadow: none; /* Remove any default shadow from the toolbar */
 }
 
 .page-title {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 22px;
-  color: #333;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  font-family: 'Poppins', sans-serif; /* Use the 'Poppins' font for the page title */
+  font-weight: 600; /* Make the title text bold */
+  font-size: 22px; /* Set the font size of the title */
+  color: #333; /* Set the title color to a dark gray */
+  display: flex; /* Use flexbox to align the title content */
+  align-items: center; /* Vertically align the items in the center */
+  gap: 8px; /* Add a gap between the icon and the text */
 }
 
 .page-title ion-icon {
-  font-size: 24px;
-  color: #ca6ad3;
+  font-size: 24px; /* Set the icon size */
+  color: #ca6ad3; /* Set the icon color to a pastel purple */
 }
 
 .custom-content {
-  --background: url('/assets/imgs/gambar.png') no-repeat center center fixed;
-  --background-size: cover;
-  padding: 20px;
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
+  --background: url('/assets/imgs/gambar.png') no-repeat center center fixed; /* Set a fixed background image */
+  --background-size: cover; /* Ensure the background image covers the entire content area */
+  padding: 20px; /* Add padding around the content */
+  font-family: 'Poppins', sans-serif; /* Use the 'Poppins' font for all text in this content */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange content in a column */
+  align-items: center; /* Center content horizontally */
+  height: 100vh; /* Make the content take up the full viewport height */
+  overflow: hidden; /* Hide any overflow content */
 }
 
 .search-container {
-  width: 60%;
-  max-width: 500px;
-  margin-bottom: 10px;
-  position: relative; /* Ensure the suggestion list is positioned correctly */
+  width: 60%; /* Set the search container width to 60% of its parent */
+  max-width: 500px; /* Set a maximum width for the search container */
+  margin-bottom: 10px; /* Add a margin below the search container */
+  position: relative; /* Ensure positioned elements inside it are positioned correctly */
 }
 
 .custom-searchbar {
-  --background: #f7ebfb; /* Soft pastel purple background */
-  --placeholder-color: #9e9e9e;
-  --icon-color: #ca6ad3;
-  border-radius: 8px;
-  box-shadow: none;
-  width: 100%;
+  --background: #f7ebfb; /* Set a soft pastel purple background for the search bar */
+  --placeholder-color: #9e9e9e; /* Set the placeholder text color to gray */
+  --icon-color: #ca6ad3; /* Set the search icon color to pastel purple */
+  border-radius: 8px; /* Round the corners of the search bar */
+  box-shadow: none; /* Remove any shadow from the search bar */
+  width: 100%; /* Make the search bar fill its container */
 }
 
 .suggestion-list {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  max-height: 150px;
-  overflow-y: auto;
-  position: absolute;
-  top: 50px; /* Position below the search bar */
-  width: 100%;
-  z-index: 1000;
+  background-color: white; /* Set the suggestion list background to white */
+  border: 1px solid #ddd; /* Add a light gray border */
+  border-radius: 8px; /* Round the corners of the suggestion list */
+  max-height: 150px; /* Limit the height of the suggestion list */
+  overflow-y: auto; /* Allow vertical scrolling if the content overflows */
+  position: absolute; /* Position the suggestion list absolutely */
+  top: 50px; /* Position it below the search bar */
+  width: 100%; /* Make the suggestion list as wide as the search bar */
+  z-index: 1000; /* Ensure the suggestion list appears above other elements */
 }
 
 .suggestion-list ion-item {
-  --background: #f3e7ff; /* Matches the theme */
-  color: #333;
-  font-family: 'Poppins', sans-serif;
+  --background: #f3e7ff; /* Set the background of suggestion items to match the theme */
+  color: #333; /* Set the text color to dark gray */
+  font-family: 'Poppins', sans-serif; /* Use the 'Poppins' font for suggestion items */
 }
 
 .suggestion-list ion-item:hover {
-  --background: #e7daf7; /* Slightly darker hover color */
+  --background: #e7daf7; /* Change background to a slightly darker pastel purple on hover */
 }
 
 .search-by-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  justify-content: flex-start;
+  display: flex; /* Use flexbox to arrange items */
+  align-items: center; /* Center items vertically */
+  gap: 10px; /* Add space between the label and the select */
+  justify-content: flex-start; /* Align items to the start (left) */
 }
 
 .search-by-label {
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
-  color: #555;
+  font-family: 'Poppins', sans-serif; /* Use the 'Poppins' font for the label */
+  font-size: 14px; /* Set the label font size */
+  color: #555; /* Set the label color to a medium gray */
 }
 
 .custom-select {
-  --background: #f7ebfb; /* Soft pastel purple background */
-  --placeholder-color: #9e9e9e;
-  border-radius: 8px;
-  box-shadow: none;
-  width: 120px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
-  font-weight: bold;
+  --background: #f7ebfb; /* Set a soft pastel purple background for the select dropdown */
+  --placeholder-color: #9e9e9e; /* Set the placeholder color to gray */
+  border-radius: 8px; /* Round the corners of the select dropdown */
+  box-shadow: none; /* Remove any shadow from the select dropdown */
+  width: 120px; /* Set the width of the select dropdown */
+  font-family: 'Poppins', sans-serif; /* Use the 'Poppins' font for the select dropdown */
+  font-size: 14px; /* Set the font size */
+  font-weight: bold; /* Make the font bold */
 }
 
 .custom-grid {
-  --background: rgba(255, 255, 255, 0.8);
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
-  font-family: 'Poppins', sans-serif;
-  border: 1px solid #ddd;
-  margin: 20px;
+  --background: rgba(255, 255, 255, 0.8); /* Set a translucent white background for the grid */
+  border-radius: 12px; /* Round the corners of the grid */
+  overflow: hidden; /* Hide any overflowing content */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15); /* Add a soft shadow around the grid */
+  font-family: 'Poppins', sans-serif; /* Use the 'Poppins' font for grid content */
+  border: 1px solid #ddd; /* Add a light gray border */
+  margin: 20px; /* Add margin around the grid */
 }
 
 ion-row {
   &:nth-child(even) {
-    background-color: rgba(236, 224, 248, 0.8);
+    background-color: rgba(236, 224, 248, 0.8); /* Set a light purple background for even rows */
   }
 
   &:nth-child(odd) {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8); /* Set a translucent white background for odd rows */
   }
 
   ion-col {
-    padding: 14px;
-    border-bottom: 1px solid #ddd;
-    text-align: center;
-    font-size: 15px;
-    color: #333;
+    padding: 14px; /* Add padding inside each column */
+    border-bottom: 1px solid #ddd; /* Add a light gray border at the bottom of each column */
+    text-align: center; /* Center text within each column */
+    font-size: 15px; /* Set the font size of the column text */
+    color: #333; /* Set the text color to dark gray */
   }
 }
 
 .table-header {
-  background-color: rgba(209, 196, 233, 0.8);
-  font-weight: bold;
-  font-size: 16px;
-  color: #333;
-  border-bottom: 2px solid #ddd;
+  background-color: rgba(209, 196, 233, 0.8); /* Set a light purple background for the table header */
+  font-weight: bold; /* Make the header text bold */
+  font-size: 16px; /* Set the font size of the header text */
+  color: #333; /* Set the header text color to dark gray */
+  border-bottom: 2px solid #ddd; /* Add a thicker gray border at the bottom of the header */
 }
 
 .short, .semi-long {
-  background-color: #ca6ad3;
-  border-radius: 12px;
-  padding: 2px 8px;
-  font-size: 13px;
-  color: #ffffff;
-  display: inline-block;
+  background-color: #ca6ad3; /* Set the background color to pastel purple */
+  border-radius: 12px; /* Round the corners */
+  padding: 2px 8px; /* Add padding inside the label */
+  font-size: 13px; /* Set the font size of the label */
+  color: #ffffff; /* Set the text color to white */
+  display: inline-block; /* Display the label inline-block */
 }
 
 .pagination-footer {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 10px;
-  background-color: transparent;
-  box-shadow: none;
-  border: none;
+  display: flex; /* Use flexbox to arrange items */
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Add padding inside the footer */
+  background-color: transparent; /* Set the background to transparent */
+  box-shadow: none; /* Remove any shadow from the footer */
+  border: none; /* Remove any border from the footer */
 }
 
 .pagination-container {
-  display: flex;
-  gap: 10px;
+  display: flex; /* Use flexbox to arrange pagination controls */
+  gap: 10px; /* Add space between pagination buttons */
 }
 
 .pagination-button {
-  --background: #ca6ad3;
-  color: #fff;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  --background: #ca6ad3; /* Set the button background color to pastel purple */
+  color: #fff; /* Set the button text color to white */
+  border-radius: 50%; /* Make the buttons circular */
+  width: 35px; /* Set the button width */
+  height: 35px; /* Set the button height */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect to the buttons */
 }
 
 .page-info {
-  margin-right: 20px;
-  font-size: 14px;
-  color: #555;
+  margin-right: 20px; /* Add margin to the right of the page info */
+  font-size: 14px; /* Set the font size for the page info */
+  color: #555; /* Set the page info text color to medium gray */
 }

@@ -1,54 +1,55 @@
 <ion-header>
-  <ion-toolbar class="custom-toolbar">
-    <ion-title class="page-title">
-      <ion-icon name="paw-outline"></ion-icon> 
-      Cat Listing
+  <ion-toolbar class="custom-toolbar"> <!-- Toolbar at the top of the page -->
+    <ion-title class="page-title"> <!-- Title within the toolbar -->
+      <ion-icon name="paw-outline"></ion-icon> <!-- Icon representing a paw, related to the cat theme -->
+      Cat Listing <!-- Title text -->
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="custom-content">
-  <div class="search-section">
-    <div class="search-container">
-      <ion-searchbar [(ngModel)]="searchTerm" placeholder="Search" (ionInput)="applyFilters()" class="custom-searchbar"></ion-searchbar>
+<ion-content class="custom-content"> <!-- Main content area with custom styling -->
+  <div class="search-section"> <!-- Section for search functionality -->
+    <div class="search-container"> <!-- Container for the search bar -->
+      <ion-searchbar [(ngModel)]="searchTerm" placeholder="Search" (ionInput)="applyFilters()" class="custom-searchbar"></ion-searchbar> 
+      <!-- Search bar with two-way data binding to 'searchTerm', triggers 'applyFilters' on input -->
     </div>
-    <div class="search-by-container">
-      <label class="search-by-label">Search by</label>
-      <ion-select [(ngModel)]="selectedFilter" class="custom-select">
-        <ion-select-option value="breed">Breed</ion-select-option>
-        <ion-select-option value="country">Country</ion-select-option>
-        <ion-select-option value="origin">Origin</ion-select-option>
-        <ion-select-option value="pattern">Pattern</ion-select-option>
+    <div class="search-by-container"> <!-- Container for the search filter selection -->
+      <label class="search-by-label">Search by</label> <!-- Label for the search filter dropdown -->
+      <ion-select [(ngModel)]="selectedFilter" class="custom-select"> <!-- Dropdown to select search filter, bound to 'selectedFilter' -->
+        <ion-select-option value="breed">Breed</ion-select-option> <!-- Option to search by breed -->
+        <ion-select-option value="country">Country</ion-select-option> <!-- Option to search by country -->
+        <ion-select-option value="origin">Origin</ion-select-option> <!-- Option to search by origin -->
+        <ion-select-option value="pattern">Pattern</ion-select-option> <!-- Option to search by pattern -->
       </ion-select>
     </div>
   </div>
 
-  <ion-grid class="custom-grid">
-    <ion-row class="table-header">
-      <ion-col>BIL.</ion-col>
-      <ion-col>BREED</ion-col>
-      <ion-col>COUNTRY</ion-col>
-      <ion-col>ORIGIN</ion-col>
-      <ion-col>COAT</ion-col>
-      <ion-col>PATTERN</ion-col>
+  <ion-grid class="custom-grid"> <!-- Grid layout for displaying cat listings -->
+    <ion-row class="table-header"> <!-- Row for table headers -->
+      <ion-col>BIL.</ion-col> <!-- Column for row number (BIL. stands for Bilangan) -->
+      <ion-col>BREED</ion-col> <!-- Column for cat breed -->
+      <ion-col>COUNTRY</ion-col> <!-- Column for cat's country -->
+      <ion-col>ORIGIN</ion-col> <!-- Column for cat's origin -->
+      <ion-col>COAT</ion-col> <!-- Column for cat's coat type -->
+      <ion-col>PATTERN</ion-col> <!-- Column for cat's coat pattern -->
     </ion-row>
-    <ion-row *ngFor="let cat of filteredCats; let i = index">
-      <ion-col>{{ i + 1 }}</ion-col>
-      <ion-col>{{ cat.breed }}</ion-col>
-      <ion-col>{{ cat.country }}</ion-col>
-      <ion-col>{{ cat.origin }}</ion-col>
+    <ion-row *ngFor="let cat of filteredCats; let i = index"> <!-- Loop through filteredCats to create rows -->
+      <ion-col>{{ i + 1 }}</ion-col> <!-- Display the row number (index + 1) -->
+      <ion-col>{{ cat.breed }}</ion-col> <!-- Display the breed of the cat -->
+      <ion-col>{{ cat.country }}</ion-col> <!-- Display the country of the cat -->
+      <ion-col>{{ cat.origin }}</ion-col> <!-- Display the origin of the cat -->
       <ion-col>
-        <span [ngClass]="cat.coat | lowercase">{{ cat.coat }}</span>
+        <span [ngClass]="cat.coat | lowercase">{{ cat.coat }}</span> <!-- Display the coat type with dynamic class based on coat type -->
       </ion-col>
-      <ion-col>{{ cat.pattern }}</ion-col>
+      <ion-col>{{ cat.pattern }}</ion-col> <!-- Display the pattern of the cat -->
     </ion-row>
   </ion-grid>
 
-  <ion-footer class="pagination-footer">
-    <div class="pagination-container">
-      <span class="page-info">Page {{ page }} of {{ totalPages }}</span>
-      <ion-button (click)="prevPage()" [disabled]="page === 1" class="pagination-button">&lt;</ion-button>
-      <ion-button (click)="nextPage()" [disabled]="page === totalPages" class="pagination-button">&gt;</ion-button>
+  <ion-footer class="pagination-footer"> <!-- Footer section for pagination controls -->
+    <div class="pagination-container"> <!-- Container for pagination buttons -->
+      <span class="page-info">Page {{ page }} of {{ totalPages }}</span> <!-- Display current page and total pages -->
+      <ion-button (click)="prevPage()" [disabled]="page === 1" class="pagination-button">&lt;</ion-button> <!-- Button to go to the previous page, disabled if on the first page -->
+      <ion-button (click)="nextPage()" [disabled]="page === totalPages" class="pagination-button">&gt;</ion-button> <!-- Button to go to the next page, disabled if on the last page -->
     </div>
   </ion-footer>
 </ion-content>

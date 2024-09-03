@@ -1,34 +1,34 @@
 <ion-app>
-  <ion-split-pane contentId="main-content">
-    <ion-menu side="start" menuId="first" contentId="main-content">
-      <ion-content>
-        <ion-list lines="none">
-          <ion-title class="custom-menu-title">Internship Project</ion-title>
-          <ion-item lines="none" class="profile-item">
-            <ion-avatar slot="center" class="profile-avatar">
-              <img src="assets/imgs/profile.jpeg" />
+  <ion-split-pane contentId="main-content"> <!-- Creates a split-pane layout with a main content area -->
+    <ion-menu side="start" menuId="first" contentId="main-content"> <!-- Defines a menu on the start (left) side of the screen -->
+      <ion-content> <!-- Container for scrollable content -->
+        <ion-list lines="none"> <!-- Creates a list with no dividing lines between items -->
+          <ion-title class="custom-menu-title">Internship Project</ion-title> <!-- Title at the top of the menu -->
+          <ion-item lines="none" class="profile-item"> <!-- List item with no lines for profile display -->
+            <ion-avatar slot="center" class="profile-avatar"> <!-- Avatar slot positioned in the center -->
+              <img src="assets/imgs/profile.jpeg" /> <!-- Profile image source -->
             </ion-avatar>
           </ion-item>
-          <ion-label class="profile-label">
-            <h2>Nur Dini Hasanah</h2>
-            <p>Front-End Task</p>
+          <ion-label class="profile-label"> <!-- Label to display profile information -->
+            <h2>Nur Dini Hasanah</h2> <!-- Display your name -->
+            <p>Front-End Task</p> <!-- Brief description or title -->
           </ion-label>
-          <ion-item class="ion-item-custom" [routerLink]="['/home']">
-            <ion-icon name="list-outline" slot="start" class="custom-icon"></ion-icon>
-            <ion-label>Cat Listing</ion-label>
+          <ion-item class="ion-item-custom" [routerLink]="['/home']"> <!-- Navigates to the home page when clicked -->
+            <ion-icon name="list-outline" slot="start" class="custom-icon"></ion-icon> <!-- Icon for the home page link -->
+            <ion-label>Cat Listing</ion-label> <!-- Label for the home page link -->
           </ion-item>
-          <ion-item class="ion-item-custom" [routerLink]="['/cat-images']">
-            <ion-icon name="images-outline" slot="start" class="custom-icon"></ion-icon> <!-- New Icon -->
-            <ion-label>Cat Images</ion-label>
+          <ion-item class="ion-item-custom" [routerLink]="['/cat-images']"> <!-- Navigates to the cat images page when clicked -->
+            <ion-icon name="images-outline" slot="start" class="custom-icon"></ion-icon> <!-- Icon for the cat images link -->
+            <ion-label>Cat Images</ion-label> <!-- Label for the cat images link -->
           </ion-item>
-          <ion-item class="ion-item-custom" [routerLink]="['/logout']">
-            <ion-icon name="log-out-outline" slot="start" class="custom-icon"></ion-icon>
-            <ion-label>Log Out</ion-label>
+          <ion-item class="ion-item-custom" [routerLink]="['/logout']"> <!-- Navigates to the logout page when clicked -->
+            <ion-icon name="log-out-outline" slot="start" class="custom-icon"></ion-icon> <!-- Icon for the logout link -->
+            <ion-label>Log Out</ion-label> <!-- Label for the logout link -->
           </ion-item>
         </ion-list>
       </ion-content>
     </ion-menu>
 
-    <ion-router-outlet id="main-content"></ion-router-outlet>
+    <ion-router-outlet id="main-content"></ion-router-outlet> <!-- Outlet for displaying the selected page's content -->
   </ion-split-pane>
 </ion-app>
